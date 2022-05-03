@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="formulario.js"></script>
+    <title>Formulario</title>
+</head>
+
+
+<body>
+    <!---Criando a Header da página---> 
+    <header>
+        <h1>Bem Vindo à Página</h1>
+        <p>Nessa Disiciplina, estudamos IHC, desenvolvimentos de pagina web, desenvolvimento para mobile e jogos.</p>
+        <p>Agora estamos em web.</p>
+    </header>
+    <hr>
+    <!--Criando o Fieldset para o Formulário-->
+        <form action="/add" method="post">
+            <fieldset>
+                <legend style="text-align: center;">Cadastro</legend>
+                <div class="field">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome"></div>
+
+                <div class="field">
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha"></div>
+
+                <div class="field">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email"></div>
+
+                <div class="field">
+                    <label for="idade">Idade:</label>
+                    <input type="number" name="idade" id="idade"  min = "0"></div>
+                    
+            </fieldset>
+            <center><div>
+                <input type="submit" value="Enviar">
+                <button type="reset">Limpar</button></div></center>
+        </form>
+    
+</body>
+    <footer style="background-color: #696969">
+    <p style="color: #fff;">Copyright by João Paulo Sillos Pereira</p>
+    </footer>
+</html>
